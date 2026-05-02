@@ -6,23 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		2266E64F2FA3A8C30052495D /* cafe manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cafe manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		2217D7A62FA605C900DEE75C /* InventoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266E6632FA3AB9D0052495D /* InventoryViewModel.swift */; };
+		2217D7A72FA6062900DEE75C /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266E6622FA3AA920052495D /* InventoryItem.swift */; };
+		2217D7AA2FA60C1700DEE75C /* cafe_managerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217D7A92FA60BF300DEE75C /* cafe_managerApp.swift */; };
+		2266E6552FA3A8C30052495D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266E6542FA3A8C30052495D /* ContentView.swift */; };
+		2266E6652FA3AC4D0052495D /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266E6642FA3AC3E0052495D /* InventoryListView.swift */; };
+		22761CEA2FA64CF600FF50BB /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22761CE92FA64CED00FF50BB /* EditItemView.swift */; };
+		22761CEC2FA6511200FF50BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22761CEB2FA6511200FF50BB /* GoogleService-Info.plist */; };
+		22761CEF2FA6537C00FF50BB /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 22761CEE2FA6537C00FF50BB /* FirebaseCore */; };
+		22761CF12FA6537C00FF50BB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 22761CF02FA6537C00FF50BB /* FirebaseFirestore */; };
+		22761CF32FA657D700FF50BB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22761CF22FA657D000FF50BB /* FirebaseService.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2266E6512FA3A8C30052495D /* cafe manager */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "cafe manager";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		2217D7A92FA60BF300DEE75C /* cafe_managerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cafe_managerApp.swift; sourceTree = "<group>"; };
+		2266E64F2FA3A8C30052495D /* cafe manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cafe manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2266E6542FA3A8C30052495D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2266E6622FA3AA920052495D /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		2266E6632FA3AB9D0052495D /* InventoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewModel.swift; sourceTree = "<group>"; };
+		2266E6642FA3AC3E0052495D /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
+		22761CE92FA64CED00FF50BB /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		22761CEB2FA6511200FF50BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22761CF22FA657D000FF50BB /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2266E64C2FA3A8C30052495D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22761CEF2FA6537C00FF50BB /* FirebaseCore in Frameworks */,
+				22761CF12FA6537C00FF50BB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +47,15 @@
 		2266E6462FA3A8C30052495D = {
 			isa = PBXGroup;
 			children = (
-				2266E6512FA3A8C30052495D /* cafe manager */,
+				22761CF22FA657D000FF50BB /* FirebaseService.swift */,
+				22761CEB2FA6511200FF50BB /* GoogleService-Info.plist */,
+				22761CE92FA64CED00FF50BB /* EditItemView.swift */,
+				2217D7A92FA60BF300DEE75C /* cafe_managerApp.swift */,
+				2266E6612FA3AA3A0052495D /* Managers */,
+				2266E6602FA3AA2B0052495D /* Services */,
+				2266E65F2FA3AA0B0052495D /* ViewModels */,
+				2266E65E2FA3A9FC0052495D /* Views */,
+				2266E65D2FA3A9EB0052495D /* Models */,
 				2266E6502FA3A8C30052495D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,45 @@
 				2266E64F2FA3A8C30052495D /* cafe manager.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2266E65D2FA3A9EB0052495D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2266E6622FA3AA920052495D /* InventoryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2266E65E2FA3A9FC0052495D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2266E6642FA3AC3E0052495D /* InventoryListView.swift */,
+				2266E6542FA3A8C30052495D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2266E65F2FA3AA0B0052495D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2266E6632FA3AB9D0052495D /* InventoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2266E6602FA3AA2B0052495D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2266E6612FA3AA3A0052495D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +122,10 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				2266E6512FA3A8C30052495D /* cafe manager */,
-			);
 			name = "cafe manager";
 			packageProductDependencies = (
+				22761CEE2FA6537C00FF50BB /* FirebaseCore */,
+				22761CF02FA6537C00FF50BB /* FirebaseFirestore */,
 			);
 			productName = "cafe manager";
 			productReference = 2266E64F2FA3A8C30052495D /* cafe manager.app */;
@@ -94,6 +155,9 @@
 			);
 			mainGroup = 2266E6462FA3A8C30052495D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				22761CED2FA6537C00FF50BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2266E6502FA3A8C30052495D /* Products */;
 			projectDirPath = "";
@@ -109,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22761CEC2FA6511200FF50BB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2266E6552FA3A8C30052495D /* ContentView.swift in Sources */,
+				2217D7A62FA605C900DEE75C /* InventoryViewModel.swift in Sources */,
+				2266E6652FA3AC4D0052495D /* InventoryListView.swift in Sources */,
+				2217D7A72FA6062900DEE75C /* InventoryItem.swift in Sources */,
+				22761CF32FA657D700FF50BB /* FirebaseService.swift in Sources */,
+				2217D7AA2FA60C1700DEE75C /* cafe_managerApp.swift in Sources */,
+				22761CEA2FA64CF600FF50BB /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +417,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22761CED2FA6537C00FF50BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22761CEE2FA6537C00FF50BB /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22761CED2FA6537C00FF50BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		22761CF02FA6537C00FF50BB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22761CED2FA6537C00FF50BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2266E6472FA3A8C30052495D /* Project object */;
 }
